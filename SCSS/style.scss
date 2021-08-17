@@ -1,0 +1,391 @@
+body {
+    background-image: url(../IMG/hero-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 100px;
+    background-color: #F7F7F7;
+    height: 1200px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$nav-font-family: 'Roboto Condensed',
+sans-serif;
+$nav-font-size: 16px;
+$nav-font-weight: 700;
+$nav-font-style: normal;
+$nav-color: #4E4E4E;
+$nav-text-decoration: none;
+$nav-text-transform: uppercase;
+
+
+/*HEADER*/
+
+.header {
+    width: 100%;
+    background-color: #E6E6E6;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        padding: 36px 0 37px 0;
+    }
+
+    .logo {
+
+        &__style {
+            text-transform: $nav-text-transform;
+            color: $nav-color;
+
+            font-family: $nav-font-family;
+            font-size: 40px;
+            font-weight: $nav-font-weight;
+            font-style: $nav-font-style;
+        }
+    }
+
+    .nav__link {
+        text-transform: $nav-text-transform;
+        display: flex;
+
+        li {
+            list-style: none;
+        }
+
+        &-style {
+            text-decoration: $nav-text-decoration;
+            color: $nav-color;
+
+            font-family: $nav-font-family;
+            font-size: $nav-font-size;
+            font-weight: $nav-font-weight;
+            font-style: $nav-font-style;
+
+            margin-right: 30px;
+
+            &:hover {
+                color: #1ABB9C;
+            }
+        }
+    }
+}
+
+
+/*SECTION*/
+
+$section-font-family: 'Roboto Slab',
+sans-serif;
+$section-font-size: 40px;
+$section-font-weight: 700;
+$section-font-style: normal;
+
+.section {
+    text-align: center;
+    margin-top: 180px;
+
+    &__all__style1 {
+        color: #fff;
+
+        font-family: $section-font-family;
+        font-size: $section-font-size;
+        font-weight: $section-font-weight;
+        font-style: $section-font-weight;
+    }
+
+    &__all__style2 {
+        color: #A8A8A8;
+
+        font-family: $section-font-family;
+        font-size: 35px;
+        font-weight: $section-font-weight;
+        font-style: $section-font-weight;
+        padding: 40px 0 66px 0;
+    }
+
+    &__all-button {
+        color: #fff;
+
+        font-family: $nav-font-family;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: $nav-font-style;
+        text-decoration: $nav-text-decoration;
+        text-transform: $nav-text-transform;
+
+        background-color: #3F8DBF;
+        border-radius: 3px;
+
+        padding: 16px 20px 15px 20px;
+        box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.15);
+
+        &:hover {
+            background-color: #137cbd;
+        }
+    }
+}
+
+$service-font-family: 'Roboto',
+sans-serif;
+$service-font-size: 14px;
+$service-font-weight: 400;
+$service-font-style: normal;
+$service-color: #000;
+
+.block-under {
+    margin: 260px 120px 0 120px;
+    border-bottom: 2px solid #DCDCDC;
+
+    &__item {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 48px;
+    }
+
+    &__item-service {
+        width: 257px;
+
+        text-align: center;
+    }
+
+    &__item-service+&__item-service {
+        margin-left: 31px;
+    }
+
+    img {
+        width: 80px;
+    }
+
+    &__item-p {
+        font-family: $service-font-family;
+        font-size: $service-font-size;
+        font-weight: $service-font-weight;
+        font-style: $service-font-style;
+
+        color: $service-color;
+        line-height: 24px;
+    }
+
+    &__item-text__style {
+        font-family: $section-font-family;
+        font-size: 18px;
+        font-weight: $section-font-weight;
+        font-style: $section-font-style;
+
+        color: #4E4E4E;
+
+        padding: 30px 0 17px 0;
+    }
+}
+
+$under-font-family: 'Roboto',
+sans-serif;
+$under-font-size: 14px;
+$under-font-weight: 400;
+$under-font-style: normal;
+$under-color: #5C5C5C;
+
+.block-under1 {
+    margin: 50px 120px 0 120px;
+
+    &__text-style {
+        font-family: $nav-font-family;
+        font-size: 18px;
+        font-weight: $nav-font-weight;
+        font-style: $nav-font-style;
+
+        text-transform: $nav-text-transform;
+        color: $nav-color;
+        margin: 0 0 22px 0;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__item-work+&__item-work {
+        margin-left: 31px;
+    }
+
+    img {
+        width: 350px;
+        height: 248.29px;
+    }
+
+    &__item-text__style {
+        font-family: $section-font-family;
+        font-size: 18px;
+        font-weight: $section-font-weight;
+        font-style: $section-font-style;
+        color: $nav-color;
+
+        padding: 25.71px 0 0 0;
+    }
+
+    &__item-text__style-under {
+        font-family: $section-font-family;
+        font-size: 13px;
+        font-weight: $section-font-weight;
+        font-style: $section-font-style;
+        color: #ADADAD;
+
+        padding: 5px 0 13px 0;
+    }
+
+    &__item-p {
+        font-family: $under-font-family;
+        font-size: $under-font-size;
+        font-weight: $under-font-weight;
+        font-style: $under-font-style;
+        color: $under-color;
+
+        line-height: 28px;
+    }
+}
+
+.testimonials {
+    width: 100%;
+    margin: 63px 0 0 0;
+    background-color: #EFEFEF;
+
+    &__text-all {
+        padding: 67.2px 0 91px 0;
+        text-align: center;
+    }
+
+    img {
+        width: 37.5px;
+        height: 29.3px;
+    }
+
+    &__text-p {
+        font-family: $section-font-family;
+        font-size: 20px;
+        font-weight: $under-font-weight;
+        font-style: $section-font-style;
+
+        padding: 36.51px 0 0 0;
+        color: #A1A1A1;
+        line-height: 30px;
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: #1F1F1F;
+
+    &__item {
+        display: flex;
+        margin: 0 120px 0 120px;
+        padding: 47px 0 50px 0;
+        border-bottom: 2px solid #353535;
+    }
+
+    &__addres {
+        width: 255px;
+    }
+
+    &__twitter {
+        width: 239px;
+        margin: 0 29px 0 29px;
+    }
+
+    &__about {
+        width: 234px;
+    }
+
+    &__posts {
+        width: 203px;
+        margin: 0 52px 0 0;
+    }
+
+    &__post1 {
+        padding: 31px 0 31px;
+    }
+
+    .style {
+        color: #CACACA;
+        font-family: $section-font-family;
+        font-weight: 400;
+        font-style: $section-font-style;
+        font-size: 12px;
+        padding-top: 3px;
+    }
+
+    &__heading-style {
+        color: #6C6C6C;
+        font-family: $nav-font-family;
+        font-weight: $nav-font-weight;
+        font-style: $nav-font-style;
+        font-size: 18px;
+
+        margin-bottom: 20px;
+
+        text-transform: $nav-text-transform;
+    }
+
+    &__paragraph-style {
+        color: #CACACA;
+        font-family: $service-font-family;
+        font-weight: 400;
+        font-size: 14px;
+        font-style: $service-font-style;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__paragraph-styles {
+        color: #CACACA;
+        font-family: $service-font-family;
+        font-weight: 400;
+        font-size: 14px;
+        font-style: $service-font-style;
+        line-height: 24px;
+        padding: 0 0 33px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__twitter-icon2 {
+        padding: 25px 0 25px 0;
+    }
+
+    &__style-paragraph {
+        color: #fff;
+        font-family: $service-font-family;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: $service-font-style;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 14px;
+        margin: 4px 5px 0 0;
+        float: left;
+    }
+
+    &-coperating {
+        margin: 0 120px 0 120px;
+        padding: 45px 0 45px 0;
+
+        &__text {
+            color: #CACACA;
+            font-family: $under-font-family;
+            font-size: 14px;
+            font-weight: $service-font-weight;
+            font-style: $under-font-style;
+        }
+    }
+}
